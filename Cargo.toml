@@ -1,0 +1,22 @@
+[package]
+name = "rust-mbedos"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+#embedded-time = "0.12.1"
+#fugit = "0.3.7"
+#panic-halt = "0.2"
+stm32h7xx-hal = { version = "0.15.1", features = ["stm32h743"] }
+
+[dependencies.embedded-hal]
+version = "0.2"
+features = ["unproven"]
+
+[dependencies.stm32h7]
+version = "0.15.1"
+features = ["stm32h743", "rt"]
